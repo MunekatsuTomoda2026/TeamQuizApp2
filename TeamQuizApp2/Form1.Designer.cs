@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            questionLabel = new Label();
+            questionLabel1 = new Label();
             answerButton1 = new Button();
             answerButton2 = new Button();
             answerButton3 = new Button();
@@ -36,14 +36,14 @@
             logListBox = new ListBox();
             SuspendLayout();
             // 
-            // questionLabel
+            // questionLabel1
             // 
-            questionLabel.AutoSize = true;
-            questionLabel.Location = new Point(249, 46);
-            questionLabel.Name = "questionLabel";
-            questionLabel.Size = new Size(50, 20);
-            questionLabel.TabIndex = 0;
-            questionLabel.Text = "label1";
+            questionLabel1.AutoSize = true;
+            questionLabel1.Location = new Point(249, 46);
+            questionLabel1.Name = "questionLabel1";
+            questionLabel1.Size = new Size(50, 20);
+            questionLabel1.TabIndex = 0;
+            questionLabel1.Text = "label1";
             // 
             // answerButton1
             // 
@@ -53,6 +53,7 @@
             answerButton1.TabIndex = 1;
             answerButton1.Text = "button1";
             answerButton1.UseVisualStyleBackColor = true;
+            answerButton1.Click += answerButton_Click;
             // 
             // answerButton2
             // 
@@ -62,6 +63,7 @@
             answerButton2.TabIndex = 2;
             answerButton2.Text = "button1";
             answerButton2.UseVisualStyleBackColor = true;
+            answerButton2.Click += answerButton_Click;
             // 
             // answerButton3
             // 
@@ -71,6 +73,7 @@
             answerButton3.TabIndex = 3;
             answerButton3.Text = "button1";
             answerButton3.UseVisualStyleBackColor = true;
+            answerButton3.Click += answerButton_Click;
             // 
             // answerButton4
             // 
@@ -80,6 +83,7 @@
             answerButton4.TabIndex = 4;
             answerButton4.Text = "button1";
             answerButton4.UseVisualStyleBackColor = true;
+            answerButton4.Click += answerButton_Click;
             // 
             // logListBox
             // 
@@ -99,7 +103,7 @@
             Controls.Add(answerButton3);
             Controls.Add(answerButton2);
             Controls.Add(answerButton1);
-            Controls.Add(questionLabel);
+            Controls.Add(questionLabel1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -108,7 +112,7 @@
 
         #endregion
 
-        private Label questionLabel;
+        private Label questionLabel1;
         private Button answerButton1;
         private Button answerButton2;
         private Button answerButton3;
